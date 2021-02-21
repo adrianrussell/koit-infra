@@ -1,5 +1,5 @@
 package provision
 
 type Startup interface {
-	WriteStartup()
+	WriteStartup() string
 }

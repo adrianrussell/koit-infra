@@ -19,7 +19,7 @@ func main() {
 }
 
 func print(s provision.Startup) {
-	s.WriteStartup()
+	fmt.Println(s.WriteStartup())
 }
 
 type topology struct {
