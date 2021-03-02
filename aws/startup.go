@@ -1,7 +1,8 @@
 package aws
 
-type AWSImplementation struct{}
+type AWSImplementation struct {
+}
 
-func (implementation *AWSImplementation) WriteStartup() string {
+func (implementation AWSImplementation) WriteStartup() string {
 	return "Provision AWS!"
 }

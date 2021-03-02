@@ -14,12 +14,16 @@ func main() {
 
 	b := vultr.VultrImplementation{}
 
-	print(&a)
-	print(&b)
+	print(a)
+	print(b)
 }
 
 func print(s provision.Startup) {
 	fmt.Println(s.WriteStartup())
+}
+
+func configureInstance(s provision.InfrastructureDefinition) {
+	s.Define().AddInstance().Number(1).Size("Small")
 }
 
 type topology struct {
