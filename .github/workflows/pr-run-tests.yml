@@ -1,7 +1,8 @@
-on: [pull_request]
-  paths-ignore:
-  - '**/README.md'
-  - 'docs/**''
+on: 
+  pull_request:
+    paths-ignore:
+    - '**/README.md'
+    - 'docs/**'
 name: Test
 jobs:
   test:
